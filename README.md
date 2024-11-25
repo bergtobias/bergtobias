@@ -16,5 +16,5 @@ I'm a **Business Analyst** at **Volvo Cars**, working in the **Supply Chain Digi
 - **Backend**: Node.js, APIs  
 - **Other**: Git, Next.js, and a sprinkle of creativity  
 
-## 🌍 Let's Connect  
+## 🌍 Let's Connect   
 Feel free to reach out or explore my side projects! I'm always open to collaborations and discussions on tech, startups, and more.  
