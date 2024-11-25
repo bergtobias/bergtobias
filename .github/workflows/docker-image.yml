@@ -7,19 +7,25 @@ on:
     branches: [ "main" ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+    
+    # Step 1: Build the Docker image and tag it
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: |
+        IMAGE_TAG=$(date +%s)
+        docker build . --file Dockerfile --tag my-image-name:$IMAGE_TAG
+        echo "IMAGE_TAG=$IMAGE_TAG" >> $GITHUB_ENV
+
+    # Step 2: Log in to GitHub Container Registry (GHCR)
     - name: Log in to GitHub Container Registry
       run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-    
-    - name: Push the Docker image to GHCR
-      run: docker tag my-image-name:$(date +%s) ghcr.io/${{ github.repository_owner }}/my-image-name:$(date +%s) &&
-            docker push ghcr.io/${{ github.repository_owner }}/my-image-name:$(date +%s)
 
+    # Step 3: Tag and push the Docker image to GHCR
+    - name: Push the Docker image to GHCR
+      run: |
+        docker tag my-image-name:${{ env.IMAGE_TAG }} ghcr.io/bergtobias/my-image-name:${{ env.IMAGE_TAG }}
+        docker push ghcr.io/bergtobias/my-image-name:${{ env.IMAGE_TAG }}
