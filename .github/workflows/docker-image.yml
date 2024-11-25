@@ -28,4 +28,4 @@ jobs:
     - name: Push Docker image to Docker Hub
       run: |
         docker tag my-image-name:${{ env.IMAGE_TAG }} docker.io/${{ secrets.DOCKER_USERNAME }}/my-image-name:latest
-        docker push docker.io/${{ secrets.DOCKER_USERNAME }}/my-image-name:${{ env.IMAGE_TAG }}
+        docker push docker.io/${{ secrets.DOCKER_USERNAME }}/my-image-name:latest
