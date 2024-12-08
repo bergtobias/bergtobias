@@ -5,11 +5,6 @@ I'm a **Business Analyst** at **Volvo Cars**, working in the **Supply Chain Digi
 ## 🌟 About Me  
 - 🔍 **Role**: Business Analyst with a knack for bridging gaps between tech and business.  
 - 💻 **Hobby**: In my free time, I dive into **full-stack development** with a focus on **Next.js** projects.  
-- 🚀 **Dream**: Aspiring to create a **startup** and contribute to innovative ideas in the tech space.  
-
-## 💼 What I Do  
-- Translate business needs into technical requirements.  
-- Collaborate closely with developers and business teams to ensure seamless communication.  
 
 ## 🛠️ Tech I Enjoy Working With  
 - **Frontend**: React, Tailwind CSS  
