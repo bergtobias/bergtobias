@@ -1,12 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
 import type React from "react";
+import "./globals.css";
 
 import { cn } from "@/lib/utils";
-import "./globals.css";
-import { Footer } from "@/components/footer";
-import { Navbar } from "@/components/navbar";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -36,18 +33,7 @@ export default function RootLayout({
           "min-h-screen  font-sans antialiased flex flex-col bg-muted/30"
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar className="border-b" />
-          <main className="flex-1 container mx-auto px-4 py-6 md:px-6 md:py-8 ">
-            {children}
-          </main>
-          <Footer className="border-t" />
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

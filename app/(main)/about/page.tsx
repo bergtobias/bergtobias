@@ -165,7 +165,7 @@ export default function AboutMe() {
                         </div>
                       </div>
 
-                      <div className="relative rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                      <div className="relative rounded-lg overflow-hidden bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center">
                         <div className="absolute inset-0 flex items-center justify-center">
                           <Image
                             src="/artist.jpg"
@@ -227,7 +227,7 @@ export default function AboutMe() {
                         </div>
                       </div>
 
-                      <div className="relative rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                      <div className="relative rounded-lg overflow-hidden bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center">
                         <div className="absolute inset-0 flex items-center justify-center">
                           <Image
                             src="/sport.jpeg"
@@ -313,7 +313,7 @@ export default function AboutMe() {
                         </div>
                       </div>
 
-                      <div className="relative rounded-lg overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+                      <div className="relative rounded-lg overflow-hidden bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center">
                         <div className="absolute inset-0 flex items-center justify-center">
                           <Image
                             src="/programing.jpg"

@@ -29,7 +29,7 @@ export default function LandingPage() {
         <div className="space-y-4 max-w-3xl">
           <div className="flex justify-center mb-6">
             <div className="relative">
-              <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary to-primary/50 blur-md opacity-75"></div>
+              <div className="absolute -inset-1 rounded-full bg-linear-to-r from-primary to-primary/50 blur-md opacity-75"></div>
               <div className="relative bg-background rounded-full p-4">
                 <Code className="h-12 w-12 text-primary" />
               </div>
@@ -234,7 +234,7 @@ export default function LandingPage() {
             <Card>
               <div className="md:grid md:grid-cols-2 md:gap-6">
                 <div className="bg-muted rounded-l-lg overflow-hidden">
-                  <div className="h-full w-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
+                  <div className="h-full w-full bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
                     <Terminal
                       className="h-24 w-24 text-primary/40"
                       strokeWidth={1}
@@ -273,7 +273,7 @@ export default function LandingPage() {
             <Card>
               <div className="md:grid md:grid-cols-2 md:gap-6">
                 <div className="bg-muted rounded-l-lg overflow-hidden">
-                  <div className="h-full w-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
+                  <div className="h-full w-full bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
                     <Database
                       className="h-24 w-24 text-primary/40"
                       strokeWidth={1}
@@ -314,7 +314,7 @@ export default function LandingPage() {
             <Card>
               <div className="md:grid md:grid-cols-2 md:gap-6">
                 <div className="bg-muted rounded-l-lg overflow-hidden">
-                  <div className="h-full w-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
+                  <div className="h-full w-full bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
                     <Layers
                       className="h-24 w-24 text-primary/40"
                       strokeWidth={1}
@@ -354,7 +354,7 @@ export default function LandingPage() {
             <Card>
               <div className="md:grid md:grid-cols-2 md:gap-6">
                 <div className="bg-muted rounded-l-lg overflow-hidden">
-                  <div className="h-full w-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
+                  <div className="h-full w-full bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
                     <Server
                       className="h-24 w-24 text-primary/40"
                       strokeWidth={1}
@@ -393,7 +393,7 @@ export default function LandingPage() {
             <Card>
               <div className="md:grid md:grid-cols-2 md:gap-6">
                 <div className="bg-muted rounded-l-lg overflow-hidden">
-                  <div className="h-full w-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
+                  <div className="h-full w-full bg-linear-to-br from-primary/20 to-primary/5 flex items-center justify-center p-6">
                     <Workflow
                       className="h-24 w-24 text-primary/40"
                       strokeWidth={1}
@@ -522,7 +522,7 @@ export default function LandingPage() {
                     </label>
                     <input
                       id="first-name"
-                      className="w-full p-2 text-sm border rounded-md focus:ring-2 focus:ring-primary focus:outline-none"
+                      className="w-full p-2 text-sm border rounded-md focus:ring-2 focus:ring-primary focus:outline-hidden"
                       placeholder="John"
                     />
                   </div>
@@ -532,7 +532,7 @@ export default function LandingPage() {
                     </label>
                     <input
                       id="last-name"
-                      className="w-full p-2 text-sm border rounded-md focus:ring-2 focus:ring-primary focus:outline-none"
+                      className="w-full p-2 text-sm border rounded-md focus:ring-2 focus:ring-primary focus:outline-hidden"
                       placeholder="Doe"
                     />
                   </div>
@@ -544,7 +544,7 @@ export default function LandingPage() {
                   <input
                     id="email"
                     type="email"
-                    className="w-full p-2 text-sm border rounded-md focus:ring-2 focus:ring-primary focus:outline-none"
+                    className="w-full p-2 text-sm border rounded-md focus:ring-2 focus:ring-primary focus:outline-hidden"
                     placeholder="john.doe@example.com"
                   />
                 </div>
@@ -555,7 +555,7 @@ export default function LandingPage() {
                   <textarea
                     id="message"
                     rows={4}
-                    className="w-full p-2 text-sm border rounded-md focus:ring-2 focus:ring-primary focus:outline-none"
+                    className="w-full p-2 text-sm border rounded-md focus:ring-2 focus:ring-primary focus:outline-hidden"
                     placeholder="Your message here..."
                   ></textarea>
                 </div>

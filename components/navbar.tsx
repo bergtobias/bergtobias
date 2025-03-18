@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./ThemeToggle";
 
 interface NavbarProps {
@@ -32,10 +31,6 @@ export function Navbar({ className }: NavbarProps) {
         </div>
         <div className="flex items-center gap-4">
           <ThemeToggle />
-          <Button variant="outline" size="sm" className="hidden md:flex">
-            Log In
-          </Button>
-          <Button size="sm">Sign Up</Button>
         </div>
       </div>
     </header>
