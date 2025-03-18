@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import type React from "react";
-import "./globals.css";
 
 import { cn } from "@/lib/utils";
 

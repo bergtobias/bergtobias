@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "app/Navbar.tsxs",
     "app/[[...mdxPath]]/page.jsx",
-    "app/(docs)/docs/[[...mdxPath]]/page.jsx"
+    "app/(docs)/docs/[[...mdxPath]]/page.ts"
   ],
   "exclude": ["node_modules"]
 }
