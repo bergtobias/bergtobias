@@ -1,6 +1,6 @@
 # Hur organiserar jag mina filer?
 
-Att ha en bra struktur på sina filer kan göra vardagen enklare och minska stressen, särskilt när jobbet känns extra tungt. Det finns många sätt att organisera sina filer på, och ett av de mest effektiva sätten är att använda PARA-metoden. Som beskrivet i Var ska jag spara mina filer kan du välja var du sparar dina filer – men hur du strukturerar dem är lika viktigt.
+Att ha en bra struktur på sina filer kan göra vardagen enklare och minska stressen, särskilt när jobbet känns extra tungt. Det finns många sätt att organisera sina filer på, och ett av de mest effektiva sätten är att använda PARA-metoden. Som beskrivet i [Var ska jag spara mina filer](/docs/spara-filer) kan du välja var du sparar dina filer – men hur du strukturerar dem är lika viktigt.
 
 ## PARA (Projekt, Ansvar, Resurser, Arkiv)
 
