@@ -1,13 +1,19 @@
+"use client";
 import React from "react";
-import { data, formatDate } from "./data";
+import { formatDate, i } from "./data";
 import { Briefcase, GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { useSearchParams } from "next/navigation";
 
 const Main = () => {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || "en";
+  const data = i(lang);
+
   return (
     <div className="p-6">
       {/* Main Content Header */}
-      <div className="mb-6">
+      <div className="mb-6 relative md:grid hidden">
         <h1 className="text-3xl font-bold">{data.name}</h1>
         <p className="text-lg text-muted-foreground">
           Business Analyst & Developer

@@ -20,5 +20,15 @@ export default function MainLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <body className={cn(geistSans, geistMono)}>{children}</body>;
+  return (
+    <body
+      className={cn(
+        geistSans,
+        geistMono,
+        "bg-[url('/vibrant-vista-001.jpg')] bg-cover"
+      )}
+    >
+      {children}
+    </body>
+  );
 }

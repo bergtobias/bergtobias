@@ -1,5 +1,5 @@
+"use client";
 import React from "react";
-import { data } from "./data";
 import {
   Code,
   Coffee,
@@ -15,11 +15,17 @@ import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
+import { i } from "./data";
+import { useSearchParams } from "next/navigation";
 
 export const Sidebar = () => {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang") || "en";
+
+  const data = i(lang);
+
   return (
-    <div className="bg-muted p-6 flex flex-col space-y-6">
-      {/* Profile */}
+    <div className="bg-primary-foreground p-6 flex flex-col space-y-6">
       <div className="text-center">
         <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto flex items-center justify-center mb-3">
           <Image
@@ -38,7 +44,6 @@ export const Sidebar = () => {
 
       <Separator />
 
-      {/* Contact Info */}
       <div>
         <h2 className="text-sm font-semibold uppercase tracking-wider mb-3 flex items-center">
           <Mail className="h-4 w-4 mr-2" /> Contact
@@ -67,7 +72,6 @@ export const Sidebar = () => {
 
       <Separator />
 
-      {/* Skills */}
       <div>
         <h2 className="text-sm font-semibold uppercase tracking-wider mb-3 flex items-center">
           <Code className="h-4 w-4 mr-2" /> Skills
@@ -89,7 +93,6 @@ export const Sidebar = () => {
 
       <Separator />
 
-      {/* Languages */}
       <div>
         <h2 className="text-sm font-semibold uppercase tracking-wider mb-3 flex items-center">
           <Languages className="h-4 w-4 mr-2" /> Languages
@@ -111,14 +114,13 @@ export const Sidebar = () => {
 
       <Separator />
 
-      {/* Interests */}
       <div>
         <h2 className="text-sm font-semibold uppercase tracking-wider mb-3 flex items-center">
           <Heart className="h-4 w-4 mr-2" /> Interests
         </h2>
         <div className="flex flex-wrap gap-2">
           {data.interests?.map((interest, index) => (
-            <Badge key={index} variant="secondary" className="text-xs">
+            <Badge key={index} variant="outline" className="text-xs bg-white">
               {interest}
             </Badge>
           ))}
@@ -134,7 +136,7 @@ export const Sidebar = () => {
         </h2>
         <div className="flex flex-wrap gap-2">
           {data.hobbies?.map((hobby, index) => (
-            <Badge key={index} variant="outline" className="text-xs">
+            <Badge key={index} variant="outline" className="text-xs bg-white">
               {hobby}
             </Badge>
           ))}
