@@ -1,5 +1,5 @@
 import { Footer, LastUpdated, Layout, Navbar } from "nextra-theme-docs";
-import { Head, Search } from "nextra/components";
+import { Search } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
 import "nextra-theme-docs/style.css";
 
@@ -37,50 +37,32 @@ export default async function DocsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      // Not required, but good for SEO
-      lang="en"
-      // Required to be set
-      dir="ltr"
-      // Suggested by `next-themes` package https://github.com/pacocoursey/next-themes#with-app
-      suppressHydrationWarning
-    >
-      <Head
-      // ... Your additional head options
-      >
-        {/* Your additional tags should be passed as `children` of `<Head>` element */}
-      </Head>
-      <body className={cn(geistSans, geistMono)}>
-        <Layout
-          navbar={navbar}
-          pageMap={await getPageMap("/docs")}
-          docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
-          footer={footer}
-          lastUpdated={
-            <LastUpdated locale="sv-SE">Uppdaterades den</LastUpdated>
-          }
-          editLink={"Redigera denna sida"}
-          search={
-            <Search
-              emptyResult="Inga resultat"
-              errorText="Något gick fel"
-              loading="Laddar..."
-              placeholder="Sök..."
-            />
-          }
-          themeSwitch={{ dark: "Mörkt", light: "Ljust", system: "System" }}
-          feedback={{ content: "Lämna Feedback" }}
-          toc={{
-            backToTop: "Tillbaka till toppen",
-            title: "Innehållsförteckning",
-          }}
-          sidebar={{ defaultMenuCollapseLevel: 2 }}
+    <Layout
+      navbar={navbar}
+      pageMap={await getPageMap("/docs")}
+      docsRepositoryBase="https://github.com/shuding/nextra/tree/main/docs"
+      footer={footer}
+      lastUpdated={<LastUpdated locale="sv-SE">Uppdaterades den</LastUpdated>}
+      editLink={"Redigera denna sida"}
+      search={
+        <Search
+          emptyResult="Inga resultat"
+          errorText="Något gick fel"
+          loading="Laddar..."
+          placeholder="Sök..."
+        />
+      }
+      themeSwitch={{ dark: "Mörkt", light: "Ljust", system: "System" }}
+      feedback={{ content: "Lämna Feedback" }}
+      toc={{
+        backToTop: "Tillbaka till toppen",
+        title: "Innehållsförteckning",
+      }}
+      sidebar={{ defaultMenuCollapseLevel: 2 }}
 
-          // ... Your additional layout options
-        >
-          {children}
-        </Layout>
-      </body>
-    </html>
+      // ... Your additional layout options
+    >
+      {children}
+    </Layout>
   );
 }

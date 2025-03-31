@@ -6,22 +6,22 @@ export const i = (lang: string): CV => {
         email: "tobiaswillyberg@gmail.com",
         phone: "+46 73 342 8858",
         location: "Gothenburg, Sweden",
-        website: "bergtobias.com",
+        website: "https://bergtobias.com",
       },
       education: [
         {
           startTime: new Date("2022-09-01"),
           endTime: new Date("2024-06-01"),
           school: "Jönköping University",
-          location: "Jönköping",
-          type: "Degree of Master of Science",
+          location: "Jönköping, Sweden",
+          type: "Master of Science",
           program: "Supply Chain Operations Management",
         },
         {
           startTime: new Date("2019-09-01"),
           endTime: new Date("2022-06-01"),
           school: "Linnaeus University",
-          location: "Växjö",
+          location: "Växjö, Sweden",
           type: "Bachelor of Science",
           program: "Industrial Economics",
         },
@@ -32,10 +32,13 @@ export const i = (lang: string): CV => {
           endTime: new Date("2025-05-23"),
           company: "Volvo Cars AB",
           title: "Business Analyst",
-          description: "Description",
+          description:
+            "Leveraged technical expertise to streamline legacy systems and enhance operational efficiency.",
           achievements: [
-            "Arbetat med olika teknologier inom webbutveckling.",
-            "Deltagit i projekt inom systemdesign och implementation.",
+            "Implemented a new message queue system for legacy systems.",
+            "Developed and deployed a full CI/CD pipeline for microservices using GitOps and DevOps practices.",
+            "Established comprehensive observability using the ELK stack.",
+            "Set up robust monitoring using the Prometheus stack.",
           ],
         },
         {
@@ -43,17 +46,20 @@ export const i = (lang: string): CV => {
           endTime: new Date("2024-06-01"),
           company: "Bring Intermodel AB",
           title: "Developer",
-          description: "Description",
+          description:
+            "Focused on developing innovative web applications and automating routine tasks.",
           achievements: [
-            "Arbetat med olika teknologier inom webbutveckling.",
-            "Deltagit i projekt inom systemdesign och implementation.",
+            "Developed a web application for fleet management.",
+            "Reduced mundane tasks by implementing automation tools.",
+            "Worked with various modern web development technologies.",
           ],
         },
       ],
       skills: [
-        { name: "TypeScript", level: 5 },
+        { name: "TypeScript", level: 4 },
         { name: "React", level: 4 },
         { name: "Node.js", level: 3 },
+        { name: "Next.js", level: 4 },
       ],
       languages: [
         { language: "Swedish", level: 5 },
@@ -62,6 +68,7 @@ export const i = (lang: string): CV => {
       hobbies: ["Programming", "Gaming", "Golf"],
       interests: ["Technology", "Business", "CloudOps", "GitOps", "DevOps"],
     },
+
     sv: {
       name: "Tobias Berg",
       contactInfo: {
@@ -113,9 +120,9 @@ export const i = (lang: string): CV => {
         },
       ],
       skills: [
-        { name: "TypeScript", level: 5 },
+        { name: "TypeScript", level: 4 },
         { name: "React", level: 4 },
-        { name: "Node.js", level: 3 },
+        { name: "Node.js", level: 4 },
       ],
       languages: [
         { language: "Svenska", level: 5 },

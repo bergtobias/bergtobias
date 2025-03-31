@@ -19,40 +19,6 @@ const Main = () => {
           Business Analyst & Developer
         </p>
       </div>
-
-      {/* Education Section */}
-      <section className="mb-8">
-        <h2 className="text-xl font-semibold mb-4 flex items-center">
-          <GraduationCap className="h-5 w-5 mr-2" /> Education
-        </h2>
-        <div className="space-y-4">
-          {data.education.map((edu, index) => (
-            <Card key={index} className="border-muted">
-              <CardContent className="p-4">
-                <div className="flex flex-col md:flex-row md:justify-between md:items-start">
-                  <div>
-                    <h3 className="font-semibold text-lg">{edu.school}</h3>
-                    <p className="text-muted-foreground text-sm">
-                      {edu.location}
-                    </p>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    {formatDate(edu.startTime)} - {formatDate(edu.endTime)}
-                  </p>
-                </div>
-                <div className="mt-2">
-                  <p className="font-medium">{edu.type}</p>
-                  <p className="text-muted-foreground">{edu.program}</p>
-                  {edu.description && (
-                    <p className="mt-2 text-sm">{edu.description}</p>
-                  )}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-
       {/* Experience Section */}
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-4 flex items-center">
@@ -89,6 +55,38 @@ const Main = () => {
                     </ul>
                   </div>
                 )}
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+      {/* Education Section */}
+      <section className="mb-8">
+        <h2 className="text-xl font-semibold mb-4 flex items-center">
+          <GraduationCap className="h-5 w-5 mr-2" /> Education
+        </h2>
+        <div className="space-y-4">
+          {data.education.map((edu, index) => (
+            <Card key={index} className="border-muted">
+              <CardContent className="p-4">
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start">
+                  <div>
+                    <h3 className="font-semibold text-lg">{edu.school}</h3>
+                    <p className="text-muted-foreground text-sm">
+                      {edu.location}
+                    </p>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {formatDate(edu.startTime)} - {formatDate(edu.endTime)}
+                  </p>
+                </div>
+                <div className="mt-2">
+                  <p className="font-medium">{edu.type}</p>
+                  <p className="text-muted-foreground">{edu.program}</p>
+                  {edu.description && (
+                    <p className="mt-2 text-sm">{edu.description}</p>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}

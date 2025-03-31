@@ -27,6 +27,12 @@ export function Navbar({ className }: NavbarProps) {
             >
               About Me
             </Link>
+            <Link
+              href="/cv?lang=en"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
+              CV
+            </Link>
           </nav>
         </div>
         <div className="flex items-center gap-4">
